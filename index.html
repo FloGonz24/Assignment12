@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+   } button {
+        width: 100px;
+        height: 40px;
+        background: pink;
+        border-radius: 6px;
+        display: block;
+        margin: 24px auto;
+		
+	} body {
+        width: 1024px;
+		max-width: 95%;
+        margin: 0 auto;
+	} #butterfly {
+			width: 150px;
+			position: relative;
+			left: 0;
+		animation-name: flying;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		animation-play-state: paused;
+	} #butterfly:hover {
+		animation-play-state: running;
+	} @keyframes flying {
+		0% {left: 0;}
+		100% {left: 820px;}
+	}
+    } h1 {
+        font: 64pt/1.0em 'Playfair Display';
+        text-align: center;
+        color: pink;
+        text-shadow: 1px 2px 3px black;
+    } p {
+        font: 14pt/1.4em Georgia;
+    } img {
+        width: 386px;
+        float: left;
+        margin: 0 24px 12px 0;
+	} @media only screen and (max-width: 750px) {
+		img { 
+			float: none;
+			width: 100%;
+		} p {
+			font: 18pt/1.6em Georgia;
+			width: 80%;
+			margin: 36px auto;
+	
+	}
+</style>
+	<script language="javascript"
+type="text/javascript">
+	function printPage() {
+		window.print();
+		
+		
+	}
+</script>
+</head>
+
+<body>
+	<div id="page"> 
+		<img id="butterfly" src="buterfly.png" />
+	
+	</div>
+    <h1>Pretty Flowers</h1>
+    <img src="flower.jpg" />
+    <p> I love flowers. Flowers are pretty. There are two flowers. They are pink. There is a pink background. How many flowers does it take to make a garden. What if they were purple flowers. What do they smell like. Bees like flowers and  so do butterflies. Animals are cool. They like to be in the wild. They like nature. Nature is mainly made up of greenery. I like to look at the leaves and smell the plants.I wonder how many different types of flowers grow in the world. Some flowers are big, and others are very small. Some grow in gardens, while others grow in fields, forests, and even near the ocean. I like how flowers come in so many different colors, like yellow, red, orange, pink, and purple. Each flower has its own shape, color, and smell. When I walk outside, I enjoy seeing the trees, flowers, and plants growing around me. The leaves move when the wind blows, and the flowers dance in the breeze. Sometimes I wonder what it would be like to live in a garden full of colorful flowers. Birds could sing in the trees, butterflies could fly around, and bees could collect nectar. Nature is a beautiful place because everything has its own purpose. Plants provide food and shelter for many animals, and trees give us shade on sunny days. I think spending time outside is relaxing because there are so many beautiful things to see, hear, and smell.</p>
+</body>
+	<button onClick="printPage()">Print Page</button>
+</html>
